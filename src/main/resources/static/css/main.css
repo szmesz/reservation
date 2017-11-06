@@ -1,0 +1,27 @@
+@charset "ISO-8859-1";
+
+body {
+	background-image: url(https://wallpapercave.com/wp/iTaGbFW.jpg);
+	background-repeat: no repeat;
+	background-size: 100%;
+	background-size: covered;
+}
+
+.button {
+	border: 5px;
+	padding: 5px;
+	text-align: left;
+	text-decoration: none;
+	display: block;
+	font-size: 25px;
+	cursor: pointer;
+	text-align: center;
+	opacity: 0.25;
+	radius: 2px;
+}
+
+a:link, a:visited {
+	background-color: #808000;
+	color: white;
+	text-decoration: none;
+}
