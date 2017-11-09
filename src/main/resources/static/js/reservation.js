@@ -15,8 +15,27 @@
     
     return reservationFormValues;
   }
+  function alertMessageAccordingToStatusCode(status) {
+	  
+	  switch (status) { 
+	  	case 400: 
+			alert("Reservation failed - please check your input for completeness.");
+			break;
+		case 405: 
+			alert("Reservation failed - please check your input for completeness.");
+			break;
+		case 409: 
+			alert('The room is already reserved for this period, please choose a different period.');
+			break;
+		case 500: 
+			alert('Reservation failed - please try again later.');
+			break;		
+		default:
+			alert('Reservation failed - please try again later.');
+	}
+  }
+ 
   
-
 $(document).ready(function() {
 
   $("#submitReservation").click(function(e) {     
@@ -51,15 +70,14 @@ $(document).ready(function() {
                                                 
       error : function(XMLHttpRequest, textStatus, errorThrown) {   
         console.log("reservation request failed ... HTTP status code: " + XMLHttpRequest.status + ' message ' + XMLHttpRequest.responseText);
-        
-        var errorCodeToHtmlIdMap = {400 : '#validation-error', 405 : '#validation-error', 409 : '#conflict-error' , 500: '#system-error'};
+        alertMessageAccordingToStatusCode(XMLHttpRequest.status);
+       /* var errorCodeToHtmlIdMap = {400 : '#validation-error', 405 : '#validation-error', 409 : '#conflict-error' , 500: '#system-error'};
         var id = errorCodeToHtmlIdMap[XMLHttpRequest.status];
-        
         if (!id) {
           id =  errorCodeToHtmlIdMap[500]; 
         }
         
-        $(id).fadeIn();
+        $(id).fadeIn();*/
       }
     });
     
