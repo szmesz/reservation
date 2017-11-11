@@ -16,10 +16,8 @@ form {
 
 @media only screen and (min-width: 230px) {
 	body {
-		background-image: url(https://wallpapercave.com/wp/iTaGbFW.jpg); */
-		background-image:
-			url(http://www.grapeshotelsnowdonia.co.uk/admin/images/61284600_1465897385.jpg);
-		*/
+		background-image: url(https://wallpapercave.com/wp/iTaGbFW.jpg);
+		height: 100%;
 		background-repeat: no-repeat;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -42,21 +40,4 @@ form {
 		display: none;
 	}
 	
-	.alert {
-		padding: 20px;
-		background-color: #f44336;
-		color: white;
-	}
-	.closebtn {
-		margin-left: 15px;
-		color: white;
-		font-weight: bold;
-		float: right;
-		font-size: 22px;
-		line-height: 20px;
-		cursor: pointer;
-		transition: 0.3s;
-	}
-	.closebtn:hover {
-		color: black;
-	}
+}
