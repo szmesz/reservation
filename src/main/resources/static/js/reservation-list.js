@@ -11,7 +11,7 @@ $(document).ready(function() {
   function loadAndDisplayListOfReservations() {
     
     $('.message').hide();
-    
+  
     var reservationListTemplateSource = $("#reservation-list-template").html();      // get the template's html source
     var reservationListTemplate = Handlebars.compile(reservationListTemplateSource); // initialize Handlebars template
 

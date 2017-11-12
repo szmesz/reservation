@@ -1,14 +1,18 @@
 @charset "ISO-8859-1";
 
+html, body{
+  height: 100%;
+}
 * {
 	box-sizing: border-box;
 }
 
 @media only screen and (min-width: 230px) {
 	body {
-		background-image:
-			url(http://www.grapeshotelsnowdonia.co.uk/admin/images/61284600_1465897385.jpg);
+		background-image: url(https://media.cntraveler.com/photos/5807d1846f39a9b41381a267/master/pass/transylvania-04-cr-mihailonaca.jpg);
 		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;

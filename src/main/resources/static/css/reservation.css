@@ -16,13 +16,15 @@ form {
 
 @media only screen and (min-width: 230px) {
 	body {
-		background-image: url(https://wallpapercave.com/wp/iTaGbFW.jpg);
-		height: 100%;
+		background-image: url(http://transylvania-holidays.co.uk/sites/default/files/tour/list/DSC_7163.JPG);
 		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+		
 	}
 	.button {
 		width: 25%;

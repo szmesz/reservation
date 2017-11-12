@@ -6,19 +6,21 @@
 
 @media only screen and (min-width: 230px) {
 	body {
-		background-image:
-			url(http://www.discoverfrome.co.uk/wp-content/uploads/2017/07/forests.jpg);
+		background-image: url(http://azimuttours.com/public/photos/tours/DSC_0121.JPG);
 		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
-		background-size: cover;
+		background-size: cover;	
 	}
 	caption {
+		font-color: black;
 		font-size: 2.5em;
 		font-family: sans-serif;
 		background-color: green;
-		opacity: 0.75;
+		opacity: 0.80;
 		padding-top: 1%;
 	}
 	thead {

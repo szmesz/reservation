@@ -6,7 +6,6 @@
 <link rel="stylesheet" type="text/css" href="/css/reservation-list.css" />
 </head>
 <body>
-
 	<div id="system-error" class="message">We are sorry, retrieving
 		the list of reservations failed - please try again later.</div>
 	</h2>
@@ -17,7 +16,9 @@
 	<div id="reservation-list">
 		<!-- the content will be placed here -->
 	</div>
-
+	
+	<div style="overflow-x:auto;">
+	
 	<script id="reservation-list-template"
 		type="text/x-handlebars-template">  
     <table id="myTable">
@@ -29,7 +30,7 @@
           <th onclick="sortTable(2)" class="button3">Start Date</th>
           <th onclick="sortTable(3)" class="button4">End Date</th>	
 		  <th onclick="sortTable(4)" class="button5">Reserved by</th>
-          <th class="button6">   Action</th>
+          <th class="button6">   Action</th>	
         </tr>
       </thead>
       <tbody>
@@ -46,6 +47,7 @@
 
       </tbody>
     </table>
+	</div>
 
   </script>
 	<script src="js/table-sorter.js"></script>
